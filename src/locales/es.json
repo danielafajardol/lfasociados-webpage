@@ -1,0 +1,16 @@
+{
+    "navbar": {
+      "home": "Inicio",
+      "about": "Nuestra Empresa",
+      "consulting": "Consultoría Legal",
+      "property" : "Propiedad Industrial",
+      "structuring" : "Estructuración de Patrimonios y Projectos Inmobiliarios",
+      "contact": "Contáctenos"
+    },
+    
+    "hero": {
+      "title": "Bienvenido a Nuestra Marca",
+      "subtitle": "Creamos productos con pasión."
+    }
+  }
+  

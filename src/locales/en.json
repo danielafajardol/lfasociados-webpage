@@ -1,0 +1,12 @@
+{
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Welcome to Our Brand",
+      "subtitle": "We create products with passion."
+    }
+  }
+  
