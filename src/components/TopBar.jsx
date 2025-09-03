@@ -3,10 +3,9 @@ import { FaLinkedin, FaFacebook, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { useI18n } from "../hooks/useI18n";
 
 export default function TopBar(){
-  const { t, lang, toggle } = useI18n();
+  const { t, lang, setLang } = useI18n();       // ⬅️ use setLang, not toggle
   const links = t.links?.social || {};
 
-  const parts = ["En","Es"]; // display order remains "En | Es"
   return (
     <div className="topbar">
       <div className="topbar-content">
@@ -16,11 +15,27 @@ export default function TopBar(){
           <a href={links.youtube} target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
           <a href={links.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
         </div>
+
+        {/* Explicit language buttons so we never land in an in-between state */}
         <div className="topbar-right">
-          <div className="lang-toggle" role="button" onClick={toggle} title="Toggle language">
-            <span className={lang === "en" ? "active" : ""}>En</span>
+          <div className="lang-toggle" role="group" aria-label="Language">
+            <button
+              type="button"
+              className={lang === "en" ? "active" : ""}
+              aria-pressed={lang === "en"}
+              onClick={() => setLang("en")}
+            >
+              En
+            </button>
             <span>|</span>
-            <span className={lang === "es" ? "active" : ""}>Es</span>
+            <button
+              type="button"
+              className={lang === "es" ? "active" : ""}
+              aria-pressed={lang === "es"}
+              onClick={() => setLang("es")}
+            >
+              Es
+            </button>
           </div>
         </div>
       </div>

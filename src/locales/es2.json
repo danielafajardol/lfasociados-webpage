@@ -1,0 +1,63 @@
+{
+    "langCode": "es",
+    "topbar": {
+      "languageToggle": "En | Es"
+    },
+    "navbar": {
+      "home": "Inicio",
+      "about": "Nuestra Firma",
+      "consulting": "Consultoría Legal",
+      "property": "Propiedad Industrial",
+      "structuring": "Estructuración de Patrimonios y Proyectos Inmobiliarios",
+      "contact": "Contáctenos"
+    },
+    "hero": {
+      "slogan": "Londoño Fajardo & Asociados, asesoría jurídica con propósito",
+      "intro": "Somos una firma moderna enfocada en la confianza, el rigor y resultados claros. Combinamos precisión jurídica con experiencia práctica para proteger y potenciar sus activos e ideas.",
+      "learnMore": "Conocer más"
+    },
+    "learn": {
+      "title": "Aprender",
+      "linkedinTitle": "Lo último en LinkedIn",
+      "campaignsTitle": "Nuestras campañas",
+      "campaignName": "Marcas para Todos",
+      "campaignVideoCaption": "¿Qué es Marcas para Todos?",
+      "campaignLearnMore": "Ver más en Instagram"
+    },
+    "services": {
+      "title": "Servicios",
+      "consulting": "Consultoría Legal",
+      "property": "Propiedad Industrial",
+      "structuring": "Estructuración de Patrimonios y Proyectos Inmobiliarios"
+    },
+    "info": {
+      "title": "Información y Contacto",
+      "partnershipsTitle": "Pregunte por nuestras alianzas",
+      "regions": ["Centroamérica", "Suramérica", "España", "Italia"],
+      "inquiriesTitle": "Consultas",
+      "contactButton": "Contáctenos"
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "name": "Nombre completo",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar"
+    },
+    "footer": {
+      "rights": "© {{year}} Londoño Fajardo & Asociados. Todos los derechos reservados."
+    },
+    "links": {
+      "linkedinPostUrl": "https://www.linkedin.com/posts/your-company-post-id",
+      "campaignVideoUrl": "https://www.youtube.com/embed/VIDEO_ID",
+      "instagramUrl": "https://www.instagram.com/your_instagram/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/your-company",
+        "facebook": "https://www.facebook.com/your-page",
+        "youtube": "https://www.youtube.com/@yourchannel",
+        "whatsapp": "https://wa.me/573001112233"
+      }
+    }
+  }
+  

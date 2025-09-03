@@ -12,7 +12,7 @@ export default function NavBar(){
       <div className="navbar-content">
         <Link to="/" className="brand" aria-label="Home">
           <img src={logo} alt="Londoño Fajardo & Asociados" />
-          <span className="title">Londoño Fajardo & Asociados</span>
+          {/* <span className="title">Londoño Fajardo & Asociados</span> */}
         </Link>
         <div className="navlinks">
           <NavLink to="/">{({isActive})=> <span className={isActive ? "active":""}>{nav.home}</span>}</NavLink>
