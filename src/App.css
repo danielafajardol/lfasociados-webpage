@@ -484,3 +484,96 @@ a.btn-link:focus-visible,
     box-shadow: none;        /* optional: logos don’t need heavy shadow */
   }
   
+  /* ===========================
+   Consulting page (hover boxes)
+   =========================== */
+.consulting-head h1{
+  margin: 0 0 .4rem;
+  color: #fff;
+  font-size: clamp(1.6rem, 1.4vw + 1.2rem, 2.2rem);
+}
+.consulting-intro{
+  margin: 0 0 1.2rem;
+  color: rgba(255,255,255,.85);
+  max-width: 80ch;
+}
+
+.consulting-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 900px){
+  .consulting-grid{ grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1200px){
+  .consulting-grid{ grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.consult-card{
+  position: relative;
+  background:
+    var(--bg-vignette),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-600) 100%);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  min-height: 160px;
+
+  /* motion */
+  transform: translateY(0);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background-color .15s ease;
+  will-change: transform;
+}
+.consult-card:hover,
+.consult-card:focus-within{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 52px rgba(0,0,0,.26);
+  border-color: rgba(255,255,255,.24);
+}
+
+.consult-title{
+  margin: .2rem 0 .4rem;
+  font-size: 1.05rem;
+  letter-spacing: .2px;
+}
+
+/* Details reveal: slide/fade in on hover/focus */
+.consult-details{
+  color: #e5e7eb;
+  line-height: 1.55;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  transform: translateY(6px);
+  transition: max-height .25s ease, opacity .25s ease, transform .25s ease;
+}
+
+/* large enough max-height to fit paragraphs */
+.consult-card:hover .consult-details,
+.consult-card:focus-within .consult-details{
+  max-height: 320px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: keyboard focus ring */
+.consult-card:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31,111,235,.35);
+  border-color: rgba(31,111,235,.55);
+}
+
+/* Reduced motion users */
+@media (prefers-reduced-motion: reduce){
+  .consult-card,
+  .consult-details{
+    transition: none;
+    transform: none;
+  }
+  .consult-details{ max-height: none; opacity: 1; }
+}

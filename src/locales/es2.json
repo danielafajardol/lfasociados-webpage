@@ -48,16 +48,17 @@
     "footer": {
       "rights": "© {{year}} Londoño Fajardo & Asociados. Todos los derechos reservados."
     },
-    "links": {
-      "linkedinPostUrl": "https://www.linkedin.com/posts/your-company-post-id",
-      "campaignVideoUrl": "https://www.youtube.com/embed/VIDEO_ID",
-      "instagramUrl": "https://www.instagram.com/your_instagram/",
-      "social": {
-        "linkedin": "https://www.linkedin.com/company/your-company",
+        "links": {
+    "linkedinPostUrl": "https://www.linkedin.com/company/35614226/",
+    "campaignVideoUrl": "https://www.instagram.com/reel/DNyGWTCWgzQ/?igsh=MXBucWw1dTIwdnVpcg%3D%3D",
+    "instagramUrl": "https://www.instagram.com/marcasparatodos/",
+    "social": {
+        "linkedin": "https://www.linkedin.com/company/35614226/",
         "facebook": "https://www.facebook.com/your-page",
         "youtube": "https://www.youtube.com/@yourchannel",
         "whatsapp": "https://wa.me/573001112233"
-      }
     }
+    }
+
   }
   
