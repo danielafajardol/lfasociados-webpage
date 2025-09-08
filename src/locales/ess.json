@@ -30,6 +30,42 @@
       "property": "Propiedad Industrial",
       "structuring": "Estructuración de Patrimonios y Proyectos Inmobiliarios"
     },
+     "consultingPage": {
+        "title": "Consultoría Legal",
+        "intro": "Acompañamos a empresas y personas con soluciones jurídicas claras y orientadas a resultados. Pase el cursor sobre cada área para ver el detalle.",
+        "items": [
+            {
+            "key": "civil_commercial",
+            "title": "Civil y Comercial",
+            "details": "Análisis, redacción y negociación de contratos en general; conceptualización de negocios; acuerdos civiles y comerciales; competencia desleal y promoción de la competencia."
+            },
+            {
+            "key": "corporate_governance",
+            "title": "Derecho societario y gobierno corporativo",
+            "details": "Constitución, reformas, transformación y liquidación de sociedades; fusiones, escisiones y adquisiciones; aumento y disminución de capital; gobierno corporativo (diagnóstico e implementación de buenas prácticas), códigos de ética y de buen gobierno; acuerdos y protocolos de accionistas; due diligence; secretaría de socios y juntas directivas; asesoría a órganos de administración y dirección; reglamentos de colocación de acciones, suscripción sucesiva, emisión de bonos, inscripción de títulos y oferta pública; procesos de reestructuración, reorganización e insolvencia; procesos concursales; actuaciones ante la Superintendencia de Sociedades y Cámaras de Comercio."
+            },
+            {
+            "key": "investment",
+            "title": "Inversión nacional y extranjera",
+            "details": "Implementación de vehículos de inversión (mecanismos fiduciarios, sociedades y otras herramientas jurídicas nacionales e internacionales); registro de inversión extranjera ante autoridades competentes; representación de personas naturales y jurídicas extranjeras."
+            },
+            {
+            "key": "public_contracts",
+            "title": "Derecho contractual administrativo",
+            "details": "Asesoría en presentación de ofertas y licitaciones; negociación y elaboración de contratos; acompañamiento en etapa precontractual y contratación estatal; actuaciones en vía gubernativa y otras actuaciones administrativas; consorcios y uniones temporales; derechos de petición; procesos ante la jurisdicción contencioso-administrativa."
+            },
+            {
+            "key": "labor",
+            "title": "Derecho Laboral",
+            "details": "Consultoría laboral, conceptos y contratos; reglamentos de trabajo, higiene y seguridad industrial; diligencias ante el Ministerio de Trabajo (citaciones y conciliaciones); programas de salud ocupacional; procesos disciplinarios; revisión de liquidaciones; procesos de desvinculación."
+            },
+            {
+            "key": "litigation_adr",
+            "title": "Litigios, arbitraje y resolución alternativa de conflictos",
+            "details": "Procesos ante la jurisdicción ordinaria y contencioso-administrativa; responsabilidad contractual y extracontractual (civil y del Estado); competencia desleal y promoción de la competencia; prácticas comerciales restrictivas; protección de propiedad industrial y derechos de autor; conciliación y arbitramento; tutelas, acciones populares y de grupo."
+            }
+        ]
+    },
     "info": {
       "title": "Información y Contacto",
       "partnershipsTitle": "Pregunte por nuestras alianzas",
@@ -49,15 +85,15 @@
       "rights": "© {{year}} Londoño Fajardo & Asociados. Todos los derechos reservados."
     },
         "links": {
-    "linkedinPostUrl": "https://www.linkedin.com/company/35614226/",
-    "campaignVideoUrl": "https://www.instagram.com/reel/DNyGWTCWgzQ/?igsh=MXBucWw1dTIwdnVpcg%3D%3D",
-    "instagramUrl": "https://www.instagram.com/marcasparatodos/",
-    "social": {
-        "linkedin": "https://www.linkedin.com/company/35614226/",
-        "facebook": "https://www.facebook.com/your-page",
-        "youtube": "https://www.youtube.com/@yourchannel",
-        "whatsapp": "https://wa.me/573001112233"
-    }
+      "linkedinPostUrl": "https://www.linkedin.com/company/35614226/",
+      "campaignVideoUrl": "https://www.instagram.com/reel/DNyGWTCWgzQ/?igsh=MXBucWw1dTIwdnVpcg%3D%3D",
+      "instagramUrl": "https://www.instagram.com/marcasparatodos/",
+      "social": {
+          "linkedin": "https://www.linkedin.com/company/35614226/",
+          "facebook": "https://www.facebook.com/your-page",
+          "youtube": "https://www.youtube.com/@yourchannel",
+          "whatsapp": "https://wa.me/573001112233"
+      }
     }
 
   }

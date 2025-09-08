@@ -1,26 +1,19 @@
 // src/i18n/LanguageProvider.jsx
 import { createContext, useContext, useEffect, useMemo, useState, useCallback } from "react";
-import en from "../locales/en.json";
-import es from "../locales/es2.json";
+import en from "../locales/enn2.json";
+import es from "../locales/ess3.json";
 
 const dictionaries = { en, es };
-const fallback = es;                  // fallback base (keep 'es' since you’re authoring in Spanish)
-const isDev = import.meta.env.DEV;    // don’t persist during dev
+const fallback = es;                  // Authoring base
+const isDev = import.meta.env.DEV;
 
-function isNonEmpty(obj){
-  return obj && typeof obj === "object" && Object.keys(obj).length > 0;
-}
-function smartMergeBlock(baseBlock, fbBlock){
-  // If base has content, merge; if empty/missing, keep fallback
-  return isNonEmpty(baseBlock) ? { ...(fbBlock || {}), ...baseBlock } : (fbBlock || {});
-}
+function isNonEmpty(obj){ return obj && typeof obj === "object" && Object.keys(obj).length > 0; }
+function smartMergeBlock(baseBlock, fbBlock){ return isNonEmpty(baseBlock) ? { ...(fbBlock||{}), ...baseBlock } : (fbBlock||{}); }
 
 function mergeWithFallback(base, fb){
   const merged = {
     ...fb,
     ...base,
-
-    // 🔐 Smart-merge all USED blocks (now includes consultingPage)
     navbar:         smartMergeBlock(base.navbar,         fb.navbar),
     hero:           smartMergeBlock(base.hero,           fb.hero),
     learn:          smartMergeBlock(base.learn,          fb.learn),
@@ -30,10 +23,13 @@ function mergeWithFallback(base, fb){
     footer:         smartMergeBlock(base.footer,         fb.footer),
     links:          smartMergeBlock(base.links,          fb.links),
     meta:           smartMergeBlock(base.meta,           fb.meta),
-    consultingPage: smartMergeBlock(base.consultingPage, fb.consultingPage), // ✅ added
+    ui:             smartMergeBlock(base.ui,             fb.ui),
+    consultingPage: smartMergeBlock(base.consultingPage, fb.consultingPage),
+    propertyPage:   smartMergeBlock(base.propertyPage,   fb.propertyPage),
+    structuringPage:smartMergeBlock(base.structuringPage,fb.structuringPage),
   };
 
-  // Normalize hero keys so old title/subtitle still work
+  // Normalize hero keys for any old shape
   merged.hero = {
     ...merged.hero,
     slogan: merged.hero.slogan ?? merged.hero.title ?? "",
@@ -56,21 +52,14 @@ export function LanguageProvider({ children }) {
     return mergeWithFallback(chosen, fallback);
   }, [lang]);
 
-  // only persist in prod
   useEffect(() => { if (!isDev) localStorage.setItem("lang", lang); }, [lang]);
   useEffect(() => { document.documentElement.setAttribute("lang", lang); }, [lang]);
 
   const toggle = useCallback(() => setLang(prev => (prev === "es" ? "en" : "es")), []);
-  const value = useMemo(() => ({ t, lang, setLang, toggle }), [t, lang, toggle]);
+  const value  = useMemo(() => ({ t, lang, setLang, toggle }), [t, lang, toggle]);
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 }
 
-export function useLang(){
-  const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLang must be used within LanguageProvider");
-  return ctx;
-}
-
+export function useLang(){ const ctx = useContext(LanguageContext); if (!ctx) throw new Error("useLang must be used within LanguageProvider"); return ctx; }
 export default LanguageProvider;
-

@@ -1,0 +1,186 @@
+{
+    "langCode": "en",
+    "topbar": {
+      "languageToggle": "En | Es"
+    },
+    "navbar": {
+      "home": "Home",
+      "about": "Our Firm",
+      "consulting": "Legal Consulting",
+      "property": "Industrial Property",
+      "structuring": "Wealth Structuring & Real Estate Projects",
+      "contact": "Contact Us"
+    },
+    "hero": {
+      "slogan": "Londoño Fajardo & Associates, legal advice with purpose",
+      "intro": "We are a modern law firm focused on trust, rigor, and clear results. Our team combines legal precision with practical experience to protect and enhance your assets and ideas.",
+      "learnMore": "Learn more"
+    },
+    "learn": {
+      "title": "Learn",
+      "linkedinTitle": "Latest on LinkedIn",
+      "campaignsTitle": "Our Campaigns",
+      "campaignName": "Marcas para Todos",
+      "campaignVideoCaption": "What is Marcas para Todos?",
+      "campaignLearnMore": "Learn more on Instagram"
+    },
+    "services": {
+      "title": "Services",
+      "consulting": "Legal Consulting",
+      "property": "Industrial Property",
+      "structuring": "Wealth Structuring & Real Estate Projects"
+    },
+    "consultingPage": {
+        "title": "Legal Consulting",
+        "intro": "We support companies and individuals with clear, results-oriented legal solutions.",
+        "items": [
+            {
+            "key": "civil_commercial",
+            "title": "Civil & Commercial",
+            "bullets": [
+                "Analysis, drafting, and negotiation of contracts",
+                "Business structuring; civil and commercial agreements",
+                "Unfair competition and competition promotion"
+            ]
+            },
+            {
+            "key": "corporate_governance",
+            "title": "Corporate Law & Governance",
+            "bullets": [
+                "Incorporation, reforms, transformation, and liquidation of companies",
+                "Mergers, spin-offs, and acquisitions",
+                "Capital increases and reductions",
+                "Corporate governance: diagnosis and best-practice implementation",
+                "Codes of ethics and good governance",
+                "Shareholders’ agreements and protocols; related instruments",
+                "Due diligence",
+                "Corporate secretariat for shareholders and boards; advice to management bodies",
+                "Rules for share placements, successive subscriptions, and bond issuances",
+                "Securities registration and public offerings",
+                "Restructuring, reorganization, and insolvency proceedings; bankruptcy-like processes",
+                "Filings before the Superintendence of Companies and Chambers of Commerce"
+            ]
+            },
+            {
+            "key": "investment",
+            "title": "Domestic & Foreign Investment",
+            "bullets": [
+                "Implementation of investment vehicles (trusts, companies, domestic/international tools)",
+                "Foreign investment filings with competent authorities",
+                "Representation of foreign individuals and entities"
+            ]
+            },
+            {
+            "key": "public_contracts",
+            "title": "Administrative Contracting",
+            "bullets": [
+                "Advice on bids and tenders; negotiation and drafting of agreements",
+                "Support in the pre-contractual phase and public procurement",
+                "Administrative and governmental proceedings",
+                "Consortia and temporary unions",
+                "Right-to-petition filings",
+                "Proceedings before the administrative courts"
+            ]
+            },
+            {
+            "key": "labor",
+            "title": "Labor & Employment",
+            "bullets": [
+                "Employment consulting, opinions, and contracts",
+                "Workplace rules and occupational health & safety",
+                "Proceedings before the Ministry of Labor (hearings and settlements)",
+                "Occupational health programs",
+                "Disciplinary proceedings",
+                "Review of payroll/benefits liquidation",
+                "Separation processes"
+            ]
+            },
+            {
+            "key": "litigation_adr",
+            "title": "Litigation, Arbitration & ADR",
+            "bullets": [
+                "Cases before ordinary and administrative courts",
+                "Contractual and tort liability (civil and State)",
+                "Unfair competition and competition advocacy",
+                "Restrictive trade practices",
+                "IP and copyright protection",
+                "Conciliation and arbitration",
+                "Constitutional and collective actions"
+            ]
+            }
+        ],
+        "indicator": "Hover or click each area to view details."
+        },
+    
+       "ui": {
+        "hoverHint": "Hover or click each area to view details."
+        },
+        "propertyPage": {
+        "title": "Industrial Property",
+        "intro": "We protect and leverage your intangible assets with strategy and precise execution.",
+        "bullets": [
+            "Protection of trademarks, trade names, trade dress, advertising slogans, and appellations of origin.",
+            "Clearance searches and registrability analysis for signs.",
+            "Protection of new creations (patents, utility models, industrial designs, and others).",
+            "Industrial property consulting, drafting of related agreements and contracts.",
+            "Recordals of assignments, transfers, name and domicile changes.",
+            "Licensing and commercialization agreements.",
+            "Copyright registration and protection.",
+            "Plant variety protection.",
+            "Health/sanitary registrations across modalities."
+        ]
+        },
+        "structuringPage": {
+        "title": "Wealth Structuring & Real Estate Projects",
+        "intro": "We design and implement robust legal structures for families and real estate ventures.",
+        "bullets": [
+            "Advisory: Specialized contractual and administrative advisory for developers and vis-à-vis supervisory authorities.",
+            "Implementation of trust and corporate vehicles for project development.",
+            "Legal and economic structuring of real estate projects.",
+            "Development and implementation of family strategies and protocols.",
+            "Structuring of family and business wealth via trusts, companies, and other mechanisms.",
+            "Diagnostics of companies and family wealth.",
+            "Due diligence.",
+            "Design and structuring of succession plans.",
+            "Guarantees — Secured transactions (movable guarantees)."
+        ]
+        },
+    "info": {
+      "title": "Information & Contact",
+      "partnershipsTitle": "Ask about our partnerships",
+      "regions": ["Central America", "South America", "Spain", "Italy"],
+      "inquiriesTitle": "Inquiries",
+      "bookingCta": "Schedule your appointment!",
+      "contactButton": "Contact Us",
+      "directContactTitle": "Direct Contact",
+      "contactDetails": {
+        "phone": "+57 300 000 0000",
+        "email": "contact@your-firm.com"
+      }
+    },
+    "learnMoreBtn": "Learn more",
+    "contact": {
+      "title": "Contact Us",
+      "name": "Full name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "footer": {
+      "rights": "© {{year}} Londoño Fajardo & Asociados. All rights reserved."
+    },
+      "links": {
+      "linkedinPostUrl": "https://www.linkedin.com/company/35614226/",
+      "campaignVideoUrl": "https://www.instagram.com/reel/DNyGWTCWgzQ/?igsh=MXBucWw1dTIwdnVpcg%3D%3D",
+      "instagramUrl": "https://www.instagram.com/marcasparatodos/",
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/35614226/",
+        "facebook": "https://www.facebook.com/your-page",
+        "youtube": "https://www.youtube.com/@yourchannel",
+        "whatsapp": "https://wa.me/573001112233"
+      }
+    }
+  
+  }
+  
