@@ -21,10 +21,11 @@ export default function Home(){
   const socials = t?.links?.social ?? {};
 
   const slides = [
+    { src: "/images/logo.png", alt: "Logo" },
     { src: "/images/im1.jpg", alt: "Image 1" },
     { src: "/images/im2.jpg", alt: "Image 2" },
     { src: "/images/im3.jpg", alt: "Image 3" },
-    { src: "/images/logo.png", alt: "Logo" },
+    
   ];
 
   const serviceCards = [
