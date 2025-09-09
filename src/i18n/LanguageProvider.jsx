@@ -1,10 +1,10 @@
 // src/i18n/LanguageProvider.jsx
 import { createContext, useContext, useEffect, useMemo, useState, useCallback } from "react";
-import en from "../locales/enn2.json";
-import es from "../locales/ess3.json";
+import en from "../locales/ennnn2.json";
+import es from "../locales/essss3.json";
 
 const dictionaries = { en, es };
-const fallback = es;                  // Authoring base
+const fallback = es;
 const isDev = import.meta.env.DEV;
 
 function isNonEmpty(obj){ return obj && typeof obj === "object" && Object.keys(obj).length > 0; }
@@ -14,22 +14,21 @@ function mergeWithFallback(base, fb){
   const merged = {
     ...fb,
     ...base,
-    navbar:         smartMergeBlock(base.navbar,         fb.navbar),
-    hero:           smartMergeBlock(base.hero,           fb.hero),
-    learn:          smartMergeBlock(base.learn,          fb.learn),
-    services:       smartMergeBlock(base.services,       fb.services),
-    info:           smartMergeBlock(base.info,           fb.info),
-    contact:        smartMergeBlock(base.contact,        fb.contact),
-    footer:         smartMergeBlock(base.footer,         fb.footer),
-    links:          smartMergeBlock(base.links,          fb.links),
-    meta:           smartMergeBlock(base.meta,           fb.meta),
-    ui:             smartMergeBlock(base.ui,             fb.ui),
-    consultingPage: smartMergeBlock(base.consultingPage, fb.consultingPage),
-    propertyPage:   smartMergeBlock(base.propertyPage,   fb.propertyPage),
-    structuringPage:smartMergeBlock(base.structuringPage,fb.structuringPage),
+    navbar:          smartMergeBlock(base.navbar,          fb.navbar),
+    hero:            smartMergeBlock(base.hero,            fb.hero),
+    learn:           smartMergeBlock(base.learn,           fb.learn),
+    services:        smartMergeBlock(base.services,        fb.services),
+    info:            smartMergeBlock(base.info,            fb.info),
+    contact:         smartMergeBlock(base.contact,         fb.contact),
+    footer:          smartMergeBlock(base.footer,          fb.footer),
+    links:           smartMergeBlock(base.links,           fb.links),
+    ui:              smartMergeBlock(base.ui,              fb.ui),
+    consultingPage:  smartMergeBlock(base.consultingPage,  fb.consultingPage),
+    propertyPage:    smartMergeBlock(base.propertyPage,    fb.propertyPage),
+    structuringPage: smartMergeBlock(base.structuringPage, fb.structuringPage),
+    aboutPage:       smartMergeBlock(base.aboutPage,       fb.aboutPage),      // ✅ NEW
   };
 
-  // Normalize hero keys for any old shape
   merged.hero = {
     ...merged.hero,
     slogan: merged.hero.slogan ?? merged.hero.title ?? "",

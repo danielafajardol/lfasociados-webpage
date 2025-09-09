@@ -1,0 +1,351 @@
+{
+    "langCode": "es",
+    "topbar": {
+      "languageToggle": "En | Es"
+    },
+    "navbar": {
+      "home": "Inicio",
+      "about": "Nuestra Firma",
+      "consulting": "Consultoría Legal y Litigios",
+      "property": "Propiedad Industrial",
+      "structuring": "Estructuración de Patrimonios y Proyectos Inmobiliarios",
+      "contact": "Contáctenos"
+    },
+    "hero": {
+      "slogan": "Londoño Fajardo & Asociados, asesoría jurídica con propósito",
+      "intro": "Somos una firma moderna enfocada en la confianza, el rigor y resultados claros. Combinamos precisión jurídica con experiencia práctica para proteger y potenciar sus activos e ideas.",
+      "learnMore": "Conocer más"
+    },
+    "learn": {
+      "title": "Aprender",
+      "linkedinTitle": "Lo último en LinkedIn",
+      "campaignsTitle": "Nuestras campañas",
+      "campaignName": "Marcas para Todos",
+      "campaignVideoCaption": "¿Qué es Marcas para Todos?",
+      "campaignLearnMore": "Ver más en Instagram"
+    },
+    "services": {
+      "title": "Servicios",
+      "consulting": "Consultoría Legal",
+      "property": "Propiedad Industrial",
+      "structuring": "Estructuración de Patrimonios y Proyectos Inmobiliarios"
+    },
+     "consultingPage": {
+  "title": "Consultoría Legal y Litigios",
+  "intro": "Acompañamos a empresas y personas con soluciones jurídicas claras y orientadas a resultados.",
+  "items": [
+    {
+      "key": "civil_commercial",
+      "title": "Civil y Comercial",
+      "bullets": [
+        "Análisis, redacción y negociación de contratos en general",
+        "Conceptualización de negocios y acuerdos civiles y comerciales",
+        "Competencia desleal y promoción de la competencia"
+      ]
+    },
+    {
+      "key": "corporate_governance",
+      "title": "Derecho societario y corporativo",
+      "bullets": [
+        "Constitución, reformas, transformación y liquidación de sociedades",
+        "Fusiones, escisiones y adquisiciones",
+        "Aumento y disminución de capital social",
+        "Gobierno corporativo: diagnóstico e implementación de buenas prácticas",
+        "Códigos de ética y de buen gobierno corporativo",
+        "Acuerdos y protocolos de accionistas; instrumentos relacionados",
+        "Due diligence",
+        "Secretaría de socios y juntas directivas; asesoría a órganos de administración y dirección",
+        "Reglamentos de colocación de acciones, suscripción sucesiva, emisión de bonos",
+        "Inscripción de títulos, oferta pública, registro nacional de valores",
+        "Procesos de reestructuración, reorganización e insolvencia; procesos concursales",
+        "Actuaciones ante Superintendencia de Sociedades y Cámaras de Comercio",
+        "Sagrilaft"
+      ]
+    },
+    {
+      "key": "investment",
+      "title": "Inversión nacional y extranjera",
+      "bullets": [
+        "Implementación de vehículos de inversión (fiducias, sociedades, herramientas nacionales e internacionales)",
+        "Inversión extranjera y su registro ante autoridades competentes",
+        "Representación de personas naturales o jurídicas extranjeras"
+      ]
+    },
+    {
+      "key": "public_contracts",
+      "title": "Derecho contractual administrativo",
+      "bullets": [
+        "Asesoría en ofertas y licitaciones; negociación y elaboración de contratos",
+        "Acompañamiento en etapa precontractual y contratación estatal",
+        "Actuaciones en vía gubernativa y otras actuaciones administrativas",
+        "Consorcios y uniones temporales",
+        "Derechos de petición",
+        "Procesos ante la jurisdicción contencioso administrativa"
+      ]
+    },
+    {
+      "key": "labor",
+      "title": "Derecho Laboral",
+      "bullets": [
+        "Consultoría laboral, elaboración de conceptos y contratos",
+        "Reglamentos de trabajo, higiene y seguridad industrial",
+        "Diligencias ante el Ministerio de Trabajo (citaciones y conciliaciones)",
+        "Programas de salud ocupacional",
+        "Procesos disciplinarios",
+        "Revisión de liquidaciones de acreencias laborales",
+        "Procesos de desvinculación de trabajadores"
+      ]
+    },
+    {
+      "key": "litigation_adr",
+      "title": "Litigios, arbitraje y resolución alternativa de conflictos",
+      "bullets": [
+        "Procesos ante la jurisdicción ordinaria y contencioso administrativa",
+        "Responsabilidad por daños: contractual, extracontractual, civil y del Estado",
+        "Competencia desleal y promoción de la competencia",
+        "Prácticas comerciales restrictivas",
+        "Protección de la propiedad industrial y derechos de autor",
+        "Conciliación y arbitramento",
+        "Tutelas, acciones populares y de grupo"
+      ]
+    }
+  ],
+  "indicator": "Pase el cursor o haga clic en cada área para ver el detalle."
+
+},
+    
+        "ui": {
+  "hoverHint": "Pase el cursor o haga clic en cada área para ver el detalle."
+},
+    "propertyPage": {
+      "title": "Propiedad Industrial",
+      "intro": "Protegemos y potenciamos sus activos intangibles con estrategia y ejecución rigurosa.",
+      "bullets": [
+        "Protección de marcas, nombres, enseñas, lemas comerciales y denominaciones de origen.",
+        "Búsquedas de antecedentes y análisis de viabilidad de registro de signos.",
+        "Protección de nuevas creaciones (patentes, modelos de utilidad, diseños industriales y otros).",
+        "Consultoría en propiedad industrial, elaboración de contratos y acuerdos relacionados.",
+        "Inscripción de traspasos, cesiones, cambios de nombre y domicilio.",
+        "Licencias de uso y acuerdos de comercialización.",
+        "Registro y protección de derechos de autor.",
+        "Propiedad Varietal.",
+        "Trámites de registros sanitarios para las diferentes modalidades."
+      ]
+    },
+    "structuringPage": {
+      "title": "Estructuración de Patrimonios y Proyectos Inmobiliarios",
+      "intro": "Diseñamos e implementamos estructuras jurídicas robustas para familias y proyectos inmobiliarios.",
+      "bullets": [
+        "Asesoría contractual y administrativa especializada a constructoras y frente a las entidades de control.",
+        "Implementación de vehículos fiduciarios y societarios para el desarrollo de proyectos.",
+        "Estructuración jurídica y económica de proyectos inmobiliarios.",
+        "Desarrollo e implementación de estrategias y protocolos de familia.",
+        "Estructuración de patrimonios familiares, empresariales a través de mecanismos fiduciarios, societarios y otros.",
+        "Diagnósticos de empresas y patrimonios familiares.",
+        "Due diligence.",
+        "Elaboración y estructuración de planes sucesorales.",
+        "Garantías – Garantías Mobiliarias."
+      ]
+    },
+    "info": {
+        "title": "Información y Contacto",
+        "partnershipsTitle": "Pregunte por nuestras alianzas",
+        "regions": ["Centroamérica", "Suramérica", "España", "Italia"],
+        "inquiriesTitle": "Consultas",
+        "bookingCta": "¡Agende su cita!",
+        "contactButton": "Contáctenos",
+        "directContactTitle": "Contacto directo",
+        "contactDetails": {
+          "phone": "+57 300 000 0000",
+          "email": "contacto@su-firma.com"
+        }
+      },
+    "learnMoreBtn": "Conocer más",
+    "contact": {
+      "title": "Contáctenos",
+      "name": "Nombre completo",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar"
+    },
+    "footer": {
+      "rights": "© {{year}} Londoño Fajardo & Asociados. Todos los derechos reservados."
+    },
+        "links": {
+          "linkedinPostUrl": "https://www.linkedin.com/company/35614226/",
+          "campaignVideoUrl": "https://www.instagram.com/reel/DNyGWTCWgzQ/?igsh=MXBucWw1dTIwdnVpcg%3D%3D",
+          "instagramUrl": "https://www.instagram.com/marcasparatodos/",
+          "social": {
+              "linkedin": "https://www.linkedin.com/company/35614226/",
+              "facebook": "https://www.facebook.com/your-page",
+              "youtube": "https://www.youtube.com/@yourchannel",
+              "whatsapp": "https://wa.me/573001112233"
+          }
+    },
+    "aboutPage": {
+      "title": "Nuestra Firma",
+      "intro": "Londoño, Fajardo & Asociados S.A.S., es una firma de abogados establecida en Bogotá, D.C., Colombia, desde 1.999, afiliada a la Cámara Colombo Española, especializada en Consultoría Legal Corporativa, Propiedad Industrial, Litigios, Estructuración de Patrimonios y Proyectos Inmobiliarios, con corresponsales en países del Pacto Andino, Sur América, Centro América, Norte América y Europa.",
+      "indicator": "Pase el cursor o haga clic en cada área para ver el detalle.",
+      "blocks": [
+        {
+          "key": "consultoria",
+          "title": "Consultoría Legal, Litigios, arbitraje y resolución alternativa de conflictos",
+          "bullets": [
+            "Derecho Civil y Comercial",
+            "Derecho societario y gobierno corporativo",
+            "Inversión nacional y extranjera",
+            "Derecho contractual administrativo",
+            "Derecho Laboral",
+            "Litigios, arbitraje y resolución alternativa de conflictos"
+          ]
+        },
+        {
+          "key": "inmobiliarios",
+          "title": "Estructuración de patrimonios y proyectos Inmobiliarios",
+          "bullets": [
+            "Desarrollo e implementación de estrategias y protocolos de familia",
+            "Estructuración jurídica y económica de proyectos inmobiliarios",
+            "Estructuración de patrimonios familiares, empresariales",
+            "Implementación de vehículos fiduciarios y societarios",
+            "Diagnósticos de empresas y patrimonios familiares",
+            "Due diligence",
+            "Elaboración y estructuración de planes sucesorales",
+            "Asesoría contractual y administrativa especializada a constructoras y frente a entidades de control",
+            "Garantías"
+          ]
+        },
+        {
+          "key": "pi",
+          "title": "Propiedad Industrial",
+          "bullets": [
+            "Protección de nuevas creaciones y signos distintivos.",
+            "Desarrollo de franquicias.",
+            "Procesos contencioso administrativos y de competencia desleal.",
+            "Efectividad comprobada del 90%."
+          ]
+        }
+      ],
+      "stats": [
+        { "key": "years", "value": ">30", "suffix": "years", "label": "experiencia legal"},
+        { "key": "projects", "value": "24", "label": "proyectos de construcción liderados" },
+        { "key": "contingency", "value": "< 1%", "label": "contingencias sobre el presupuesto" },
+        { "key": "investments", "value": "USD 200M+", "label": "inversiones agregadas asesoradas" },
+        { "key": "sqm", "value": "1.850.411", "suffix": "m²", "label": "de construcción" },
+        { "key": "eff", "value": "90", "suffix": "%", "label": "de efectividad en litigios de propiedad industrial" },
+        { "key": "proc", "value": ">35", "suffix": "", "label": "procesos de arbitraje" },
+        { "key": "bono", "value": "20", "suffix": "%", "label": "actividades pro-bono" }
+      ],
+      "team": {
+        "partnersTitle": "Socios",
+        "alliesTitle": "Aliados",
+        "partners": [
+          {
+            "name": "Sergio Fajardo Maldonado",
+            "image": "/images/sergio.png",
+            "details": [
+              "30 años de experiencia en Derecho; Fellow del Chartered Institute of Arbitrators (FCIArb)",
+              "Socio fundador y representante legal de Londoño Fajardo & Asociados S.A.S",
+              "Abogado (U. de La Sabana)",
+              "Maestría de Segundo Nivel en Derecho Comercial Internacional (Sapienza Università di Roma).",
+              "Maestría en Derecho con énfasis en Responsabilidad Contractual y Extracontractual (U. Externado de Colombia).",
+              "Posgrado en Negociación y Relaciones Internacionales (U. de los Andes)",
+              "PADE en INALDE",
+              "Estudios complementarios en Yale.",
+              "Árbitro del Centro de Conciliación y Arbitraje de la Cámara de Comercio de Bogotá",
+              "Miembro SCI",
+              "Árbitro ante Supersociedades",
+              "Presidente de la Asociación de Comisionistas de la Bolsa Mercantil de Colombia",
+              "Miembro del Tribunal Nacional Disciplinario de Avaluadores (ANA)",
+              "Representante legal de constructoras y miembro de juntas (p. ej., Finanzauto S.A.)",
+              "Experto en planeación patrimonial, asesoría corporativa y litigios ordinarios y arbitrales; dirección de equipos en negocios públicos y privados.",
+              "Cursos en estructuración empresarial, productividad y fundraising (International School of Fundraising, Londres).",
+              "Conferencista, consultor y profesor universitario (pregrado y posgrado). Líneas de investigación: responsabilidad civil, reparación, corporativo y competencia.",
+              "Ex presidente de la Sala Disciplinaria de la Bolsa Mercantil (Ley 964/2005); ex miembro del Comité de Vigilancia (2008–2014) y de la Cámara de Arbitraje (2015–2017).",
+              "Asesor jurídico de Extebandes (hoy Standard Chartered Bank Colombia) y Fidubandes S.A.; experiencia en firmas de alto prestigio (Palacios Lleras; Leal Angarita & Asociados)."
+            ],
+            "linkedin": "https://www.linkedin.com/in/fill-link"
+
+          },
+          {
+            "name": "María Patricia Londoño",
+            "image": "/images/patricia.png",
+            "details": [
+              "Más de 30 años de experiencia; empresaria y socia fundadora de Londoño, Fajardo & Asociados S.A.S.",
+              "Abogada (U. Externado de Colombia); Maestría de Segundo Nivel en Derecho Comercial Internacional (La Sapienza, Roma).",
+              "Especialista en Derecho Financiero (U. del Rosario) y en Derecho de Sociedades (Pontificia U. Javeriana); Diplomado en Valoración de Empresas.",
+              "Árbitro del Centro de Conciliación y Arbitraje de la Cámara de Comercio de Bogotá; miembro de la SCI; árbitro ante Supersociedades.",
+              "Perita jurídica y Secretaria Arbitral en procesos cofinanciados por el Banco Mundial (Centro de Arbitraje y Conciliación SCI).",
+              "Enfoque en consultoría corporativa y societaria, propiedad industrial y estructuración de proyectos y patrimonios.",
+              "Participación en negociaciones nacionales e internacionales; estructuración de compañías de inversión inmobiliaria y patrimonios (> COP 100 mil millones).",
+              "Consultoría civil y comercial a empresas con patrimonios > COP 20 mil millones; franquicias y propiedad industrial con efectividad del 90%.",
+              "Representación de multinacionales con negocios en Colombia (India, Alemania, Estados Unidos y España).",
+              "Cursos de gestión empresarial, productividad y consecución de recursos (International School of Fundraising, The Leadership Institute, Londres).",
+              "Conferencista, consultora y profesora universitaria (pregrado) en sociedades, propiedad industrial y derecho laboral."
+            ],
+            "linkedin": "https://www.linkedin.com/in/fill-link"
+
+          }
+        ],
+        "allies": [
+          {
+            "name": "Ramón Madriñán Rivera",
+            "image": "/images/ramon.png",
+            "focus": "Derecho Comercial y Regulatorio",
+            "details": [
+              "Abogado, Especialista en Derecho de Seguros (Pontificia Universidad Javeriana).",
+              "LL.M. en Harvard Law School; investigador invitado.",
+              "Ex Director de Regulación del Min. de Industria y Turismo — política económica/comercial y negociaciones internacionales.",
+              "Experiencia en regulación de producto, práctica comercial y derecho internacional; proyectos en A. Latina y el Caribe.",
+              "Profesor en las Universidades Javeriana y Externado (derecho económico).",
+              "Autor de libros y artículos sobre derecho del consumo y regulación de producto."
+            ],
+            "linkedin": "https://www.linkedin.com/in/fill-link"
+
+          },
+          {
+            "name": "Álvaro Camacho Montoya",
+            "image": "/images/alvaro.png",
+            "focus": "Derecho Tributario Inmobiliario y Tributos Distritales/Municipales",
+            "details": [
+              "Abogado del Rosario; especialista en Derecho Tributario.",
+              "Asesor especializado en impuestos inmobiliarios y tributos locales.",
+              "Profesor en posgrados de tributario (U. del Rosario, U. de los Andes).",
+              "Autor de libros sobre tributos a la propiedad raíz, plusvalía e impuestos a la construcción.",
+              "Autor de artículos en Revistas Legis y periódico El Tiempo."
+            ],
+            "linkedin": "https://www.linkedin.com/in/fill-link"
+
+          },
+          {
+            "name": "Sonia Mendoza Rodríguez",
+            "image": "/images/sonia.png",
+            "focus": "Derecho Laboral",
+            "details": [
+              "Abogada especialista en Derecho Laboral (Pontificia Universidad Javeriana).",
+              "Más de 20 años de experiencia en laboral, seguridad social y salud ocupacional.",
+              "Experiencia en sector público, privado e independiente; apoderada ante la jurisdicción laboral."
+            ],
+            "linkedin": "https://www.linkedin.com/in/fill-link"
+
+          },
+          {
+            "name": "Julieta Abello Polo",
+            "image": "/images/julieta.png",
+            "focus": "Derecho de Familia",
+            "details": [
+              "Abogada (U. Sergio Arboleda). Especialista y Magíster en Derecho de Familia (U. Javeriana / U. Antonio Nariño).",
+              "Práctica independiente desde 2003; bilingüe.",
+              "Docente y conferencista invitada; autora de publicaciones sobre filiación.",
+              "Ha escrito para la Rama Judicial y trabajos académicos en derecho de familia."
+            ],
+            "linkedin": "https://www.linkedin.com/in/fill-link"
+
+          }
+        ]
+      }
+    }
+
+
+}
+  

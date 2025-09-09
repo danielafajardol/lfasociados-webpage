@@ -93,23 +93,69 @@
     position: sticky; top:0; z-index: 50;
     box-shadow: 0 10px 30px rgba(0,0,0,.25);
   }
-  .navbar-content{
+  .navbar-content {
     max-width: var(--maxw);
-    margin:0 auto;
+    margin: 0 auto;
     padding: .8rem 1rem;
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    gap:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo left, links right */
+    gap: 2rem;                      /* space between logo and links */
   }
-  .brand{ display:flex; align-items:center; gap:.6rem; }
-  .brand img{ height:36px; width:auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,.25)); }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    flex: 0 0 auto; /* ✅ prevent logo from shrinking into links */
+  }
+
+  .brand img {
+    height: 60px;    /* try 60px for bigger logo */
+    width: auto;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+  }  
+
   .brand .title{ font-weight:700; letter-spacing:.3px; font-size:1.05rem; }
   
-  .navlinks{ display:flex; gap:1.25rem; align-items:center; flex-wrap: wrap; }
-  .navlinks a{ color: #e5e7eb; opacity:.95; transition: opacity .2s ease, color .2s ease; }
-  .navlinks a:hover{ color:#fff; opacity:1; }
-  .navlinks .active{ color:#fff; font-weight:600; }
+  .navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.5rem;          /* spacing between items */
+    flex-wrap: nowrap;    /* all items stay in one row */
+    overflow-x: auto;     /* if it's too much, allow horizontal scroll */
+    scrollbar-width: none;
+  }
+  
+  .navlinks::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .navlinks a {
+    color: #e5e7eb;
+    opacity: .95;
+    transition: opacity .2s ease, color .2s ease;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: .3px;
+    line-height: 1.2;        /* ✅ allow vertical stacking */
+    white-space: normal;     /* ✅ allow breaking inside long titles */
+    text-align: center;      /* keeps multi-line text centered under each link */
+    max-width: 10rem;        /* optional: limit width so “Nuestra Firma” wraps neatly */
+  }
+  
+  .navlinks a:hover {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .navlinks .active {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  
   
   /* ===========================
      Hero
@@ -930,4 +976,310 @@ a.btn-link:focus-visible,
 }
 .link-like{
   text-decoration: underline;
+}
+
+/* ===== About / Stats ===== */
+.stat-tiles{
+  display:grid; gap:1rem; grid-template-columns: 1fr 1fr;
+}
+@media(min-width:900px){
+  .stat-tiles{ grid-template-columns: repeat(4, 1fr); }
+}
+.stat-tile{
+  background:
+    var(--bg-vignette),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-600) 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  padding: 1.25rem;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  min-height: 140px;
+  text-align:center;
+}
+.stat-value{
+  font-size: clamp(1.6rem, 1.8vw + 1.2rem, 2.4rem);
+  font-weight: 800;
+  letter-spacing: .4px;
+  line-height: 1;
+}
+.stat-suffix{ margin-left:.2rem; font-weight:700; opacity:.95; }
+.stat-label{ margin-top:.5rem; color:#e5e7eb; }
+
+/* ===== Team ===== */
+.team-grid{
+  display:grid; gap: 1rem; grid-template-columns: 1fr;
+}
+@media(min-width:800px){ .team-grid{ grid-template-columns: repeat(2,1fr); } }
+
+.team-card{
+  background:
+    var(--bg-vignette),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-600) 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  padding: 1rem;
+  display:flex; flex-direction:column; align-items:center; gap:.6rem;
+  text-align:center;
+  min-height: 260px;
+}
+.team-photo-wrap{
+  width: 140px; height: 140px; border-radius: 999px; overflow:hidden;
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow: 0 10px 28px rgba(0,0,0,.3);
+  background:#fff;
+}
+.team-photo-wrap img{ width:100%; height:100%; object-fit: cover; }
+.team-name{ font-weight:700; }
+
+/* ===== Allies (photo + fixed header + reveal details) ===== */
+.ally-grid{
+  display:grid; gap:1rem; grid-template-columns: 1fr;
+}
+@media(min-width:900px){ .ally-grid{ grid-template-columns: 1fr 1fr; } }
+
+.ally-card{
+  position:relative;
+  background:
+    var(--bg-vignette),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-600) 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.ally-card:hover, .ally-card.is-open{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 52px rgba(0,0,0,.26);
+  border-color: rgba(255,255,255,.24);
+}
+.ally-photo{
+  width:100%; height: 220px; overflow:hidden; background:#fff;
+}
+.ally-photo img{ width:100%; height:100%; object-fit: cover; }
+.ally-header{
+  position: sticky; top:0; /* keep visible when details expand */
+  background: linear-gradient(180deg, rgba(10,28,54,.95), rgba(10,28,54,.88));
+  backdrop-filter: blur(2px);
+  padding: .75rem 1rem .5rem;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  z-index: 1;
+}
+.ally-name{ font-weight:700; }
+.ally-focus{ color:#e5e7eb; font-size:.95rem; }
+
+.ally-details{
+  max-height: 0; opacity: 0; overflow: hidden;
+  transition: max-height .25s ease, opacity .25s ease, padding .2s ease;
+  padding: 0 1rem;
+}
+.ally-card:hover .ally-details,
+.ally-card.is-open .ally-details{
+  max-height: 800px; opacity: 1; padding: .6rem 1rem 1rem;
+}
+.ally-details ul{
+  margin:.2rem 0 0 1.1rem; padding:0;
+}
+.ally-details li{
+  line-height:1.6; margin:.25rem 0; color:#e5e7eb;
+}
+
+/* ===== About page intro paragraph (full line) ===== */
+.about-intro{
+  margin: .2rem 0 1.2rem;
+  color: rgba(255,255,255,.92);
+  max-width: none;            /* span the full container width */
+  font-size: 1.02rem;
+}
+.about-intro strong{ color:#fff; font-weight:800; }
+
+/* Partner cards: circle photo, equal spacing, paragraph reveal */
+.team-card.interactive{
+  position: relative;
+  background:
+    var(--bg-vignette),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-600) 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  padding: 1.1rem 1rem;
+  display:flex; flex-direction:column; align-items:center;
+  text-align:center;
+  min-height: 280px;            /* << smaller default height */
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.team-card.interactive:hover,
+.team-card.interactive.is-open{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 52px rgba(0,0,0,.26);
+  border-color: rgba(255,255,255,.24);
+}
+.team-photo-wrap{
+  width: 140px; height: 140px; border-radius: 999px; overflow:hidden;
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow: 0 10px 28px rgba(0,0,0,.3);
+  background:#fff;
+  flex: 0 0 auto;
+}
+.team-photo-wrap img{ width:100%; height:100%; object-fit: cover; }
+.team-name{
+  font-weight:700;
+  margin-top:.6rem;
+  flex: 0 0 auto;
+}
+
+/* partner bullet list (replaces paragraph reveal) */
+.partner-details{
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(6px);
+  transition: max-height .25s ease, opacity .25s ease, transform .25s ease, padding .2s ease;
+  padding: 0 .2rem;
+  margin-top: .35rem;
+}
+.team-card.interactive:hover .partner-details,
+.team-card.interactive.is-open .partner-details{
+  opacity: 1;
+  max-height: 1600px;   /* large to fit long bios */
+  transform: translateY(0);
+  padding: .2rem .2rem .4rem;
+}
+.partner-details ul{
+  margin:.2rem 0 0 1.1rem;
+  padding:0;
+}
+.partner-details li{
+  color:#f3f4f6;
+  line-height:1.55;
+  margin:.25rem 0;
+}
+
+.partner-details {
+  text-align: left;        /* override the centering */
+  width: 100%;             /* so the bullets align nicely */
+}
+
+.partner-details ul {
+  margin: .4rem 0 0 1.2rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.partner-details li {
+  text-align: left;        /* ensure bullets and text are left aligned */
+  color: #f3f4f6;
+  line-height: 1.55;
+  margin: .25rem 0;
+}
+
+
+/* Ensure equal top/bottom whitespace inside interactive cards */
+.team-card.interactive{
+  justify-content: flex-start;
+  padding-bottom: 1.4rem;
+}
+
+/* Allies grid unchanged */
+.ally-grid{
+  display:grid; gap:1rem; grid-template-columns: 1fr;
+}
+@media(min-width:900px){ .ally-grid{ grid-template-columns: 1fr 1fr; } }
+
+.ally-card{
+  position:relative;
+  background:
+    var(--bg-vignette),
+    linear-gradient(180deg, var(--navy) 0%, var(--navy-600) 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  min-height: 280px;                     /* << smaller default height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.1rem 1rem 1.3rem;
+}
+.ally-card:hover, .ally-card.is-open{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 52px rgba(0,0,0,.26);
+  border-color: rgba(255,255,255,.24);
+}
+
+/* circular ally photo (same as partners) */
+.ally-photo-wrap{
+  width: 140px; height: 140px; border-radius: 999px; overflow:hidden;
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow: 0 10px 28px rgba(0,0,0,.3);
+  background:#fff;
+  flex: 0 0 auto;
+}
+.ally-photo-wrap img{ width:100%; height:100%; object-fit: cover; }
+
+/* name + focus with NO dark strip — consistent with partners */
+.ally-header{
+  width: 100%;
+  text-align: center;
+  padding-top: .6rem;
+  flex: 0 0 auto;
+  background: transparent;            /* << remove darker background */
+  border: none;                       /* << remove border line */
+}
+.ally-name{ font-weight:700; color:#fff; }
+.ally-focus{ color:#e5e7eb; font-size:.95rem; }
+
+/* details reveal below header */
+.ally-details{
+  width: 100%;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(6px);
+  transition: max-height .25s ease, opacity .25s ease, transform .25s ease, padding .2s ease;
+  padding: 0 .2rem;
+  margin-top: .35rem;
+}
+.ally-card:hover .ally-details,
+.ally-card.is-open .ally-details{
+  opacity: 1;
+  max-height: 1200px;                 /* << generous for long bios */
+  transform: translateY(0);
+  padding: .2rem .2rem .3rem;
+}
+.ally-details ul{
+  margin:.2rem 0 0 1.1rem; padding:0;
+}
+.ally-details li{
+  line-height:1.6; margin:.25rem 0; color:#f3f4f6;
+}
+
+
+/* Subsection heading styling */
+.subhead{
+  margin: 0;
+  color: #fff; /* << make Socios / Allies white */
+  font-size: clamp(1.1rem, 1vw + .9rem, 1.4rem);
+}
+
+.more-link {
+  margin-top: 1rem;
+  text-align: left; /* keep aligned with bullets */
+}
+
+.partner-details .btn-link,
+.ally-details .btn-link {
+  font-weight: 600;
+  color: var(--accent);
 }
